@@ -1,0 +1,10 @@
+{
+  "name": "jays-website",
+  "private": true,
+  "scripts": {
+    "dev": "serve . -l 8080"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
+  }
+}
