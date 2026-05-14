@@ -4,9 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Skills — Jay Rao</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="newspaper.css" />
 </head>
 <body>
+
+  <header class="masthead">
+    <div class="masthead-top-rule">
+      <div class="mast-corner"><strong>Technical Skills</strong><br>Full Inventory<br>Page One</div>
+      <div style="text-align:center;flex:1;font-family:'IM Fell English SC',serif;font-size:0.95rem;letter-spacing:0.2em;">Electrical Engineering · Arizona State University</div>
+      <div class="mast-corner" style="text-align:right;"><strong>Late City Edition</strong><br>Est. 2026</div>
+    </div>
+    <h1 class="masthead-title">Jay Rao</h1>
+    <p class="masthead-subtitle">Engineer · Builder · Problem Solver</p>
+    <div class="masthead-edition-bar">
+      <span>Vol. I &nbsp;·&nbsp; No. 1</span>
+      <span>Tempe, Arizona — Wednesday, April 23, 2026</span>
+      <span><a href="mailto:jayrao0107@gmail.com">jayrao0107@gmail.com</a> &nbsp;·&nbsp; <a href="https://github.com/jrao06" target="_blank" rel="noopener">github.com/jrao06</a></span>
+    </div>
+  </header>
 
   <nav>
     <div class="nav-inner">
@@ -23,129 +43,150 @@
 
   <main>
 
-    <h1 class="page-title">Skills</h1>
-    <p style="margin-bottom:2rem;">Tools, technologies, and areas I've worked in.</p>
+    <div style="border-top:3px solid var(--ink); padding:0.9rem 1rem 0.6rem; text-align:center;">
+      <span class="section-kicker">Technical Profile</span>
+      <h2 class="headline-xl" style="font-size:clamp(1.6rem,3.6vw,2.6rem); border-bottom:2px solid var(--ink); padding-bottom:0.6rem; margin:0.3rem auto 0.5rem; text-align:center; max-width:900px;">
+        Tools, Technologies &amp; Areas of Mastery: A Complete Inventory
+      </h2>
+      <div class="byline" style="margin-bottom:0.4rem;">Compiled by Jay Rao &nbsp;·&nbsp; Engineering Correspondent &nbsp;·&nbsp; April 23, 2026</div>
+    </div>
 
-    <!-- Languages -->
-    <section class="skills-section">
-      <h2 class="section-label">Programming Languages</h2>
-      <div class="skills-grid">
+    <div class="np-front" style="border:1px solid var(--ink); border-top:none;">
 
-        <div class="skill-item sketch-box">
-          <span class="skill-icon">⚙️</span>
-          <span class="skill-name">C++</span>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="width:85%;"></div>
-          </div>
+      <!-- Left: programming languages -->
+      <div class="np-col">
+        <span class="section-kicker">Programming Languages</span>
+        <h3 class="headline-md">Fluency Across the Stack</h3>
+        <div class="body-text" style="font-size:0.88rem; margin-bottom:1rem;">
+          <p>Mr. Rao writes production code in three languages, each serving a distinct domain — from bare-metal firmware to interactive web applications.</p>
         </div>
 
-        <div class="skill-item sketch-box">
-          <span class="skill-icon">🐍</span>
-          <span class="skill-name">Python</span>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="width:80%;"></div>
-          </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>C++</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Python</span><span>80%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>JavaScript</span><span>80%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:80%"></div></div>
         </div>
 
-        <div class="skill-item sketch-box">
-          <span class="skill-icon">🟨</span>
-          <span class="skill-name">JavaScript</span>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="width:80%;"></div>
-          </div>
-        </div>
+        <hr class="rule-double">
 
+        <span class="section-kicker">Frameworks &amp; Libraries</span>
+        <h3 class="headline-md">Modern Web Arsenal</h3>
+        <div class="skill-row">
+          <div class="skill-label"><span>React 19</span><span>85%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:85%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Node.js</span><span>80%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Socket.io</span><span>75%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:75%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Tailwind CSS</span><span>80%</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:80%"></div></div>
+        </div>
       </div>
-    </section>
 
-    <hr class="divider" />
+      <div class="np-col-divider"></div>
 
-    <!-- Frameworks & Libraries -->
-    <section class="skills-section">
-      <h2 class="section-label">Frameworks &amp; Libraries</h2>
-      <div class="skills-grid">
+      <!-- Center: engineering tools -->
+      <div class="np-col">
+        <span class="section-kicker">Engineering &amp; Design Tools</span>
+        <h3 class="headline-lg" style="border-bottom:1px solid var(--ink); padding-bottom:0.4rem; margin-bottom:0.8rem;">
+          Hardware Expertise Rivals Software Chops
+        </h3>
 
-        <div class="skill-item sketch-box">
-          <span class="skill-icon">⚛️</span>
-          <span class="skill-name">React 19</span>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="width:85%;"></div>
-          </div>
+        <div class="body-text drop-cap" style="font-size:0.9rem;">
+          <p>WHAT DISTINGUISHES Mr. Rao from his peers is the comfort with which he moves between digital and physical worlds. Where many engineers specialize exclusively in code or exclusively in hardware, Mr. Rao has cultivated genuine depth in both.</p>
+          <p>His SOLIDWORKS proficiency was exercised directly on the Africa2Bridge braille display, where mechanical tolerances matter as much as firmware logic. MATLAB underpins his signal-processing and numerical analysis coursework at ASU. And his Arduino fluency, honed through years of personal projects and club mentorship, spans everything from sensor calibration to actuator control.</p>
         </div>
 
-        <div class="skill-item sketch-box">
-          <span class="skill-icon">🟢</span>
-          <span class="skill-name">Node.js</span>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="width:80%;"></div>
+        <hr class="rule-double">
+
+        <div class="np-3col" style="border:1px solid var(--ink);">
+          <div class="np-col" style="padding:0.6rem 0.8rem;">
+            <span class="section-kicker">Design</span>
+            <div class="tag-row" style="flex-direction:column; gap:0.4rem;">
+              <span class="np-tag">SOLIDWORKS</span>
+              <span class="np-tag">MATLAB</span>
+              <span class="np-tag">Excel</span>
+              <span class="np-tag">Microsoft Office</span>
+            </div>
+          </div>
+          <div class="np-col" style="padding:0.6rem 0.8rem;">
+            <span class="section-kicker">Hardware</span>
+            <div class="tag-row" style="flex-direction:column; gap:0.4rem;">
+              <span class="np-tag">Arduino</span>
+              <span class="np-tag">Embedded Systems</span>
+              <span class="np-tag">Sensor Calibration</span>
+              <span class="np-tag">CAD</span>
+            </div>
+          </div>
+          <div class="np-col" style="padding:0.6rem 0.8rem;">
+            <span class="section-kicker">Dev Tools</span>
+            <div class="tag-row" style="flex-direction:column; gap:0.4rem;">
+              <span class="np-tag">Git</span>
+              <span class="np-tag">VS Code</span>
+              <span class="np-tag">WebSockets</span>
+              <span class="np-tag">Google Earth Engine</span>
+            </div>
           </div>
         </div>
-
-        <div class="skill-item sketch-box">
-          <span class="skill-icon">🔌</span>
-          <span class="skill-name">Socket.io</span>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="width:75%;"></div>
-          </div>
-        </div>
-
-        <div class="skill-item sketch-box">
-          <span class="skill-icon">🎨</span>
-          <span class="skill-name">Tailwind CSS</span>
-          <div class="skill-bar-wrap">
-            <div class="skill-bar" style="width:80%;"></div>
-          </div>
-        </div>
-
       </div>
-    </section>
 
-    <hr class="divider" />
+      <div class="np-col-divider"></div>
 
-    <!-- Tools & Other -->
-    <section class="skills-section">
-      <h2 class="section-label">Tools &amp; Engineering</h2>
-      <div class="card-grid">
-
-        <div class="card sketch-box">
-          <span class="card-icon">📐</span>
-          <h3>Design &amp; Modeling</h3>
-          <div class="card-tags" style="margin-bottom:0;">
-            <span class="tag">SOLIDWORKS</span>
-            <span class="tag">MATLAB</span>
-            <span class="tag">Excel</span>
-            <span class="tag">Microsoft Office</span>
-          </div>
+      <!-- Right: soft skills / philosophy -->
+      <div class="np-col">
+        <span class="section-kicker">Approach</span>
+        <h3 class="headline-md">On the Philosophy of Building</h3>
+        <div class="body-text" style="font-size:0.88rem;">
+          <p>Asked to describe his working method, Mr. Rao is characteristically direct: <em>"Start with the problem, not the technology. Pick the simplest tool that solves it, then iterate."</em></p>
+          <p>This pragmatism is evident across his portfolio. Dollar Dash did not require a sophisticated back-end — but real-time gameplay demanded WebSockets, and so he learned them. The braille display did not require CAD — but manufacturable parts did, and so SOLIDWORKS entered his toolkit.</p>
         </div>
 
-        <div class="card sketch-box">
-          <span class="card-icon">🔧</span>
-          <h3>Hardware</h3>
-          <div class="card-tags" style="margin-bottom:0;">
-            <span class="tag">Arduino</span>
-            <span class="tag">Embedded Systems</span>
-            <span class="tag">Sensor Calibration</span>
-            <span class="tag">CAD</span>
-          </div>
+        <hr class="rule-double">
+
+        <span class="section-kicker">Soft Skills</span>
+        <h3 class="headline-md">Leadership &amp; Communication</h3>
+        <div class="skill-row">
+          <div class="skill-label"><span>Team Leadership</span><span>★★★★☆</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:82%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Technical Writing</span><span>★★★★☆</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:78%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Mentorship</span><span>★★★★★</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:90%"></div></div>
+        </div>
+        <div class="skill-row">
+          <div class="skill-label"><span>Rapid Prototyping</span><span>★★★★★</span></div>
+          <div class="skill-track"><div class="skill-fill" style="width:88%"></div></div>
         </div>
 
-        <div class="card sketch-box">
-          <span class="card-icon">💻</span>
-          <h3>Dev Tools</h3>
-          <div class="card-tags" style="margin-bottom:0;">
-            <span class="tag">Git</span>
-            <span class="tag">VS Code</span>
-            <span class="tag">WebSockets</span>
-          </div>
+        <hr class="rule-thin">
+        <div class="body-text" style="font-size:0.82rem; font-style:italic; color:var(--ink-mid);">
+          <p>"All credit belongs to him," says teacher at ASU, noting Mr. Rao's sleepless dedication to the Braille Display project this past semester.</p>
         </div>
-
       </div>
-    </section>
+
+    </div>
 
   </main>
 
   <footer>
-    <p>Drawn with care &mdash; Jay Rao &copy; 2026</p>
+    <p>Jay Rao &nbsp;·&nbsp; Electrical Engineering, Arizona State University &nbsp;·&nbsp; Tempe, Arizona &nbsp;·&nbsp; © 2026</p>
   </footer>
 
 </body>

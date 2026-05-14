@@ -1,13 +1,89 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Jay Rao — Personal Site</title>
-  <link rel="stylesheet" href="styles.css" />
-</head>
-<body>
+<!DOCTYPE html><html lang="en"><plasmo-csui id="g0-textarea-recorder"></plasmo-csui><head>
 
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jay Rao — Personal Site</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&amp;display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&amp;display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="stylesheet" href="newspaper.css">
+  <style>
+    /* Full-width banner headline like Herald Tribune */
+    .banner-headline {
+      text-align: center;
+      border-top: 3px solid var(--ink);
+      border-bottom: 2px solid var(--ink);
+      padding: 0.5rem 1.5rem;
+      margin-bottom: 0;
+    }
+    .banner-headline h2 {
+      font-family: 'Playfair Display', serif;
+      font-weight: 900;
+      font-size: clamp(1.6rem, 4vw, 3rem);
+      line-height: 1.1;
+      text-align: center;
+      letter-spacing: 0.01em;
+    }
+
+    /* Clickable story titles */
+    .story-link {
+      color: var(--ink);
+      text-decoration: none;
+      display: block;
+    }
+    .story-link:hover .headline-md,
+    .story-link:hover .headline-lg {
+      text-decoration: underline;
+      text-underline-offset: 3px;
+    }
+
+    /* Section headings centered */
+    .section-heading-center {
+      text-align: center;
+      font-family: 'Playfair Display', serif;
+      font-weight: 700;
+      font-size: 1.1rem;
+      letter-spacing: 0.08em;
+      border-bottom: 1px solid var(--ink);
+      padding-bottom: 0.3rem;
+      margin-bottom: 0.8rem;
+    }
+  </style>
+<link id="gfont-Caveat" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Caveat:wght@300;400;500;600;700&amp;display=swap"><link id="gfont-Architects-Daughter" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Architects+Daughter:wght@300;400;500;600;700&amp;display=swap"><link id="gfont-Bebas-Neue" rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bebas+Neue:wght@300;400;500;600;700&amp;display=swap"></head>
+<body data-new-gr-c-s-check-loaded="14.1285.0" data-gr-ext-installed="" style="cursor: crosshair;" data-cc-id="cc-1" data-new-gr-c-s-loaded="14.1285.0">
+
+  <!-- MASTHEAD -->
+  <header class="masthead">
+    <div class="masthead-top-rule">
+      <div class="mast-corner">
+        <strong>The Weather</strong><br>
+        Today: Partly Sunny<br>
+        Tempe, AZ — 84°F<br>
+        <em>Full forecast, Page 3</em>
+      </div>
+      <div style="text-align:center; flex:1;">
+        <div style="font-family:'IM Fell English SC',serif; font-size:0.95rem; letter-spacing:0.2em;">Electrical Engineering · Arizona State University</div>
+      </div>
+      <div class="mast-corner">
+        <strong>Late City Edition</strong><br>
+        Est. 2026<br>
+        Phoenix, Arizona<br>
+        <em>Five Cents</em>
+      </div>
+    </div>
+    <h1 class="masthead-title">Jay Rao</h1>
+    <p class="masthead-subtitle">Engineer · Builder · Problem Solver</p>
+    <div class="masthead-edition-bar">
+      <span>Vol. I &nbsp;·&nbsp; No. 1</span>
+      <span>Tempe, Arizona — Wednesday, April 23, 2026</span>
+      <span><a href="mailto:jayrao0107@gmail.com">jayrao0107@gmail.com</a> &nbsp;·&nbsp; <a href="https://github.com/jrao06" target="_blank" rel="noopener">github.com/jrao06</a></span>
+    </div>
+  </header>
+
+  <!-- NAV -->
   <nav>
     <div class="nav-inner">
       <a href="index.html" class="nav-logo">JR</a>
@@ -23,75 +99,134 @@
 
   <main>
 
-    <!-- Hero -->
-    <section class="hero" style="margin-top:2rem;">
-      <div class="hero-text">
-        <h1 class="page-title">Hey, I'm Jay.</h1>
-        <p>Electrical engineering student at ASU with hands-on experience in embedded systems, rapid prototyping, and full-stack web development.</p>
-        <p>Welcome to my corner of the internet.</p>
+    <!-- FULL-WIDTH BANNER HEADLINE -->
+    <div class="banner-headline">
+      <h2>Engineer Ships Real-Time Trading Game, Braille Hardware &amp; Satellite Analysis</h2>
+    </div>
+
+    <!-- MAIN CONTENT: 3-col like a broadsheet -->
+    <div class="np-front" style="border:1px solid var(--ink); border-top:none; margin-bottom:0;">
+
+      <!-- Left col: side stories -->
+      <div class="np-col">
+        <div class="section-heading-center">Latest Dispatches</div>
+
+        <a href="projects.html" class="story-link">
+          <span class="section-kicker">Engineering</span>
+          <h2 class="headline-md">ASU Student Leads Braille Display Project, Partners With Austrian Firm and South African School</h2>
+        </a>
+        <hr class="rule-thin">
+
+        <a href="projects.html" class="story-link">
+          <span class="section-kicker">Hackathon</span>
+          <h2 class="headline-md">Dollar Dash Market Engine Handles Thousands of Live Trades Per Second</h2>
+        </a>
+        <hr class="rule-thin">
+
+        <a href="projects.html" class="story-link">
+          <span class="section-kicker">Competition</span>
+          <h2 class="headline-md">SpaceHACK Entry Takes 1st at ASU, 2nd Internationally Among 150+ Teams</h2>
+        </a>
+        <hr class="rule-thin">
+
         <div class="btn-group">
-          <a href="projects.html" class="btn">View Projects</a>
-          <a href="contact.html" class="btn">Get In Touch</a>
+          <a href="contact.html" class="np-btn">Get In Touch</a>
         </div>
       </div>
-      <div>
-        <div class="avatar-placeholder">
-          <!-- Placeholder person icon -->
-          <svg viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="50" cy="35" r="18"/>
-            <path d="M15 90 C15 68 85 68 85 90"/>
-          </svg>
+
+      <div class="np-col-divider"></div>
+
+      <!-- Center: photo + bio -->
+      <div class="np-col" style="text-align:center;">
+        <div class="photo-rotated-wrap" style="max-width:300px; margin:0 auto 0;">
+          <img src="images/jay_newspaper.png" alt="Jay Rao" data-cc-id="cc-2">
+        </div>
+        <div class="body-text drop-cap" style="text-align:justify; margin-top:0.8rem;">
+          <p>JAY RAO, an electrical engineering student at Arizona State University, has in a remarkably short time compiled a portfolio spanning embedded systems, full-stack web applications, and satellite-driven geospatial analysis. Raised in Livermore, California, Mr. Rao arrived in Tempe with a GPA of 3.90 and a conviction that engineering is most meaningful when it solves real problems for real people.</p>
+          <p>His work on the Africa2Bridge Braille Display — an AI-assisted hardware system for blind and partially sighted users — exemplifies that conviction, connecting partners across three continents.</p>
         </div>
       </div>
-    </section>
 
-    <hr class="divider" />
+      <div class="np-col-divider"></div>
 
-    <!-- Quick Sections Preview -->
-    <section>
-      <h2 class="section-label">What you'll find here</h2>
-      <div class="card-grid">
-
-        <a href="about.html" style="text-decoration:none; color:inherit;">
-          <div class="card sketch-box">
-            <span class="card-icon">✏️</span>
-            <h3>About Me</h3>
-            <p>Background, interests, and what drives me.</p>
-          </div>
-        </a>
-
-        <a href="projects.html" style="text-decoration:none; color:inherit;">
-          <div class="card sketch-box">
-            <span class="card-icon">📐</span>
-            <h3>Projects</h3>
-            <p>Things I've built — from apps to experiments.</p>
-          </div>
-        </a>
-
-        <a href="skills.html" style="text-decoration:none; color:inherit;">
-          <div class="card sketch-box">
-            <span class="card-icon">⚙️</span>
-            <h3>Skills</h3>
-            <p>Technologies and tools I work with.</p>
-          </div>
-        </a>
-
-        <a href="contact.html" style="text-decoration:none; color:inherit;">
-          <div class="card sketch-box">
-            <span class="card-icon">✉️</span>
-            <h3>Contact</h3>
-            <p>Let's connect — I'd love to hear from you.</p>
-          </div>
-        </a>
-
+      <!-- Right col: at a glance -->
+      <div class="np-col">
+        <div class="section-heading-center">At a Glance</div>
+        <div class="body-text" style="font-size:0.88rem;">
+          <p><strong>Degree:</strong> B.S.E., Electrical Engineering</p>
+          <p><strong>School:</strong> Arizona State University</p>
+          <p><strong>GPA:</strong> 3.51 (Current) · 3.90 (HS)</p>
+          <p><strong>Email:</strong> jayrao0107@gmail.com</p>
+          <p><strong>Phone:</strong> 510-398-9967</p>
+          <p><strong>GitHub:</strong> github.com/jrao06</p>
+          <p><strong>LinkedIn:</strong> linkedin.com/in/jayraor6</p>
+        </div>
+        <hr class="rule-thin">
+        <div class="section-heading-center">Skills</div>
+        <div class="body-text" style="font-size:0.88rem;">
+          <p>C++ · Python · JavaScript · React · Node.js · Socket.io · SOLIDWORKS · MATLAB · Arduino · Embedded Systems · CAD · Git</p>
+        </div>
+        <hr class="rule-thin">
+        <div class="section-heading-center">Currently Seeking</div>
+        <div class="body-text" style="font-size:0.88rem;">
+          <p>Engineering internship in embedded systems, hardware prototyping, or full-stack development. Available Summer 2026.</p>
+        </div>
       </div>
-    </section>
+
+    </div>
+
+    <!-- BELOW THE FOLD -->
+    <hr class="rule-double">
+
+    <div style="text-align:center; margin-bottom:0.3rem;">
+      <span class="section-kicker">Further Reading</span>
+    </div>
+
+    <div class="np-3col" style="border: 1px solid var(--ink);">
+
+      <div class="np-col">
+        <div class="section-heading-center">About</div>
+        <a href="about.html" class="story-link">
+          <h3 class="headline-md">Background &amp; Education</h3>
+        </a>
+        <div class="body-text" style="font-size:0.88rem;">
+          <p>Mr. Rao grew up with an abiding curiosity for how things work — a trait that led him from kitchen-table electronics experiments to EPICS labs at ASU. Before university, he led volunteer education programs for 120+ students at Shiva Vishnu Temple in Livermore.</p>
+        </div>
+        <a href="about.html" class="np-btn np-btn-outline" style="margin-top:0.5rem; font-size:0.7rem;">Read Full Profile →</a>
+      </div>
+
+      <div class="np-col">
+        <div class="section-heading-center">Projects</div>
+        <a href="projects.html" class="story-link">
+          <h3 class="headline-md">Featured Works</h3>
+        </a>
+        <div class="body-text" style="font-size:0.88rem;">
+          <p><strong>Dollar Dash</strong> — Multiplayer stock trading game with a live market engine updating 4× per second via WebSockets. Built for InnovationHACKS 2.0.</p>
+          <p><strong>SpaceHACK 2026</strong> — Satellite analysis using CO data and vessel tracking. 1st at ASU, 2nd internationally.</p>
+          <p><strong>Braille Display</strong> — EPICS hardware/AI project improving web accessibility.</p>
+        </div>
+        <a href="projects.html" class="np-btn np-btn-outline" style="margin-top:0.5rem; font-size:0.7rem;">View All Projects →</a>
+      </div>
+
+      <div class="np-col">
+        <div class="section-heading-center">Skills</div>
+        <a href="skills.html" class="story-link">
+          <h3 class="headline-md">Technical Arsenal</h3>
+        </a>
+        <div class="body-text" style="font-size:0.88rem;">
+          <p>From microcontroller firmware in C++ to full-stack React applications, Mr. Rao operates across the hardware-software boundary with equal comfort. Proficient in SOLIDWORKS, MATLAB, and modern web tooling including Socket.io for real-time systems.</p>
+        </div>
+        <a href="skills.html" class="np-btn np-btn-outline" style="margin-top:0.5rem; font-size:0.7rem;">Full Skills List →</a>
+      </div>
+
+    </div>
 
   </main>
 
   <footer>
-    <p>Drawn with care &mdash; Jay Rao &copy; 2026</p>
+    <p>Jay Rao &nbsp;·&nbsp; Electrical Engineering, Arizona State University &nbsp;·&nbsp; Tempe, Arizona &nbsp;·&nbsp; © 2026</p>
   </footer>
 
-</body>
-</html>
+
+
+</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration></html>

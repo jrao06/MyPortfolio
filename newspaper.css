@@ -1,0 +1,554 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400;1,700;1,900&family=IM+Fell+English:ital@0;1&family=IM+Fell+English+SC&display=swap');
+@import url('https://fonts.cdnfonts.com/css/old-london');
+
+/* ─── Reset ─── */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+  --paper: #f5f0e2;
+  --paper-dark: #ede5cc;
+  --paper-mid: #e8dfc6;
+  --ink: #110e08;
+  --ink-mid: #3a3020;
+  --ink-light: #6b5f45;
+  --rule-thick: 4px;
+  --rule-thin: 1px;
+  --max: 1100px;
+}
+
+html { scroll-behavior: smooth; }
+
+body {
+  background-color: var(--paper);
+  color: var(--ink);
+  font-family: 'IM Fell English', Georgia, serif;
+  font-size: 1rem;
+  line-height: 1.55;
+  min-height: 100vh;
+  background-image:
+    linear-gradient(to bottom,
+      rgba(245, 240, 226, 0.65) 0%,
+      rgba(245, 240, 226, 0) 30%,
+      rgba(245, 240, 226, 0) 70%,
+      rgba(245, 240, 226, 0.65) 100%),
+    url('images/paper-bg.jpg');
+  background-repeat: repeat-y, repeat-y;
+  background-size: 100% 66.67vw, 100% auto;
+  background-position: top center, top center;
+  background-attachment: scroll, scroll;
+}
+
+/* ─── Masthead ─── */
+.masthead {
+  border-top: 6px solid var(--ink);
+  border-bottom: 2px solid var(--ink);
+  padding: 0.4rem 0 0;
+  text-align: center;
+  position: relative;
+}
+
+.masthead-top-rule {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 1rem 0.4rem;
+  font-family: 'IM Fell English', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+  line-height: 1.3;
+}
+
+.masthead-top-rule .mast-corner {
+  max-width: 160px;
+  text-align: left;
+}
+.masthead-top-rule .mast-corner:last-child { text-align: right; }
+
+.masthead-title {
+  font-family: 'Old London', 'UnifrakturMaguntia', cursive;
+  font-size: clamp(3rem, 8vw, 6.5rem);
+  line-height: 1.15;
+  letter-spacing: 0.02em;
+  color: var(--ink);
+  margin: 0 0 0.05rem;
+  text-align: center;
+}
+
+.masthead-subtitle {
+  font-family: 'IM Fell English SC', 'IM Fell English', serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.22em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  margin: 0.1rem 0 0.4rem;
+}
+
+.masthead-edition-bar {
+  border-top: 1px solid var(--ink);
+  border-bottom: 1px solid var(--ink);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0.22rem 1rem;
+  font-family: 'IM Fell English', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.04em;
+}
+
+.masthead-edition-bar a {
+  color: var(--ink);
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-color 0.12s;
+}
+.masthead-edition-bar a:hover { border-bottom-color: var(--ink); }
+
+/* ─── Navigation ─── */
+nav {
+  background: transparent;
+  border-bottom: 3px double var(--ink);
+}
+
+.nav-inner {
+  max-width: var(--max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.35rem 1rem;
+}
+
+.nav-logo {
+  font-family: 'Pirata One', 'UnifrakturMaguntia', cursive;
+  font-size: 1.6rem;
+  color: var(--ink);
+  text-decoration: none;
+}
+
+/* ─── Photo box ─── */
+.photo-rotated-wrap {
+  overflow: hidden;
+  border: 1px solid var(--ink);
+  position: relative;
+}
+
+.photo-rotated-wrap img {
+  width: 100%;
+  display: block;
+  filter: contrast(0.9);
+}
+
+.nav-links {
+  display: flex;
+  gap: 0;
+  list-style: none;
+}
+
+.nav-links li {
+  border-left: 1px solid var(--ink);
+}
+.nav-links li:last-child {
+  border-right: 1px solid var(--ink);
+}
+
+.nav-links a {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--ink);
+  text-decoration: none;
+  padding: 0.25rem 0.9rem;
+  display: block;
+  transition: background 0.12s;
+}
+
+.nav-links a:hover,
+.nav-links a.active {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+/* ─── Layout ─── */
+main {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 1.5rem 1rem 4rem;
+}
+
+/* ─── Rules ─── */
+.rule-double {
+  border: none;
+  border-top: 4px double var(--ink);
+  margin: 1.4rem 0;
+}
+.rule-thick {
+  border: none;
+  border-top: 3px solid var(--ink);
+  margin: 1.2rem 0;
+}
+.rule-thin {
+  border: none;
+  border-top: 1px solid var(--ink);
+  margin: 1rem 0;
+}
+
+/* ─── Section Label (like kicker/department) ─── */
+.section-kicker {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 0.7rem;
+  letter-spacing: 0.2em;
+  text-transform: uppercase;
+  color: var(--ink-mid);
+  display: block;
+  margin-bottom: 0.2rem;
+}
+
+/* ─── Headlines ─── */
+.headline-xl {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(2rem, 5vw, 3.8rem);
+  font-weight: 900;
+  line-height: 1.05;
+  margin-bottom: 0.4rem;
+  text-wrap: pretty;
+}
+
+.headline-lg {
+  font-family: 'Playfair Display', serif;
+  font-size: clamp(1.4rem, 3vw, 2.2rem);
+  font-weight: 700;
+  line-height: 1.1;
+  margin-bottom: 0.4rem;
+  text-wrap: pretty;
+}
+
+.headline-md {
+  font-family: 'Playfair Display', serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  font-style: italic;
+  line-height: 1.2;
+  margin-bottom: 0.35rem;
+  text-wrap: pretty;
+}
+
+.headline-sm {
+  font-family: 'Playfair Display', serif;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 0.3rem;
+}
+
+/* ─── Byline ─── */
+.byline {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 0.8rem;
+  color: var(--ink-mid);
+  margin-bottom: 0.6rem;
+  letter-spacing: 0.03em;
+}
+
+/* ─── Body text ─── */
+.body-text {
+  font-family: 'IM Fell English', serif;
+  font-size: 0.95rem;
+  line-height: 1.6;
+  text-align: justify;
+  hyphens: auto;
+  -webkit-hyphens: auto;
+}
+
+.body-text p { margin-bottom: 0.7em; }
+
+/* ─── Drop cap ─── */
+.drop-cap::first-letter {
+  font-family: 'Pirata One', 'UnifrakturMaguntia', cursive;
+  font-weight: 400;
+  float: left;
+  font-size: 4.2em;
+  line-height: 0.82;
+  margin: 0.04em 0.07em -0.02em 0;
+  padding-top: 0.05em;
+}
+
+/* ─── Newspaper grid ─── */
+.np-grid {
+  display: grid;
+  gap: 0;
+}
+
+/* Front page layout: hero + side columns */
+.np-front {
+  display: grid;
+  grid-template-columns: 1fr 2px 1.8fr 2px 1fr;
+  gap: 0;
+  border-bottom: 1px solid var(--ink);
+}
+
+.np-col {
+  padding: 0.8rem 1.1rem;
+}
+
+.np-col-divider {
+  background: var(--ink);
+  width: 1px;
+  margin: 0.5rem 0;
+}
+
+/* 3-column below fold */
+.np-3col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 0;
+}
+
+.np-3col .np-col {
+  border-right: 1px solid var(--ink);
+}
+.np-3col .np-col:last-child {
+  border-right: none;
+}
+
+/* 2-column */
+.np-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0;
+}
+.np-2col .np-col {
+  border-right: 1px solid var(--ink);
+}
+.np-2col .np-col:last-child { border-right: none; }
+
+/* 4-column */
+.np-4col {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0;
+}
+.np-4col .np-col {
+  border-right: 1px solid var(--ink);
+}
+.np-4col .np-col:last-child { border-right: none; }
+
+/* ─── Photo box ─── */
+.photo-box {
+  border: 1px solid var(--ink);
+  overflow: hidden;
+  margin: 0.6rem 0;
+}
+
+.photo-box img {
+  width: 100%;
+  display: block;
+  filter: grayscale(100%) contrast(1.1) brightness(0.98);
+}
+
+.photo-caption {
+  font-family: 'IM Fell English', serif;
+  font-style: italic;
+  font-size: 0.75rem;
+  color: var(--ink-mid);
+  text-align: center;
+  border-top: 1px solid var(--ink);
+  padding: 0.25rem 0.5rem;
+  background: var(--paper-dark);
+}
+
+/* ─── Story box (card) ─── */
+.story-box {
+  border: 1px solid var(--ink);
+  padding: 0.9rem 1rem;
+  margin-bottom: 1rem;
+  background: var(--paper);
+}
+
+/* ─── Tags / pills ─── */
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  margin: 0.5rem 0;
+}
+
+.np-tag {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 0.68rem;
+  letter-spacing: 0.1em;
+  border: 1px solid var(--ink-mid);
+  padding: 0.1rem 0.45rem;
+  color: var(--ink-mid);
+}
+
+/* ─── Buttons ─── */
+.np-btn {
+  display: inline-block;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--paper);
+  background: var(--ink);
+  border: 1px solid var(--ink);
+  padding: 0.4rem 1.1rem;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background 0.12s, color 0.12s;
+}
+
+.np-btn:hover {
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.np-btn-outline {
+  background: transparent;
+  color: var(--ink);
+}
+.np-btn-outline:hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+.btn-group {
+  display: flex;
+  gap: 0.6rem;
+  flex-wrap: wrap;
+  margin-top: 0.8rem;
+}
+
+/* ─── Timeline ─── */
+.np-timeline {
+  list-style: none;
+  border-left: 2px solid var(--ink);
+  padding-left: 1rem;
+  margin: 0;
+}
+
+.np-timeline li {
+  position: relative;
+  padding-bottom: 1.2rem;
+}
+
+.np-timeline li::before {
+  content: '◆';
+  position: absolute;
+  left: -1.33rem;
+  top: 0.05em;
+  font-size: 0.6rem;
+  color: var(--ink);
+}
+
+.np-timeline .tl-year {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.1em;
+  color: var(--ink-light);
+}
+
+.np-timeline .tl-title {
+  font-family: 'Playfair Display', serif;
+  font-weight: 700;
+  font-size: 1rem;
+  line-height: 1.2;
+  margin: 0.1rem 0 0.2rem;
+}
+
+.np-timeline .tl-desc {
+  font-family: 'IM Fell English', serif;
+  font-size: 0.88rem;
+  color: var(--ink-mid);
+}
+
+/* ─── Skills bar ─── */
+.skill-row {
+  margin-bottom: 0.7rem;
+}
+
+.skill-label {
+  display: flex;
+  justify-content: space-between;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.08em;
+  margin-bottom: 0.25rem;
+}
+
+.skill-track {
+  height: 7px;
+  border: 1px solid var(--ink);
+  background: var(--paper-dark);
+}
+
+.skill-fill {
+  height: 100%;
+  background: var(--ink);
+}
+
+/* ─── Contact form ─── */
+.np-label {
+  font-family: 'IM Fell English SC', serif;
+  font-size: 0.78rem;
+  letter-spacing: 0.1em;
+  display: block;
+  margin-bottom: 0.25rem;
+}
+
+.np-input {
+  width: 100%;
+  padding: 0.45rem 0.6rem;
+  font-family: 'IM Fell English', serif;
+  font-size: 0.95rem;
+  color: var(--ink);
+  background: var(--paper);
+  border: 1px solid var(--ink);
+  border-radius: 0;
+  outline: none;
+  transition: box-shadow 0.1s;
+  resize: vertical;
+  margin-bottom: 0.8rem;
+}
+
+.np-input:focus {
+  box-shadow: inset 2px 2px 0 rgba(0,0,0,0.1);
+}
+
+textarea.np-input { min-height: 110px; }
+
+/* ─── Footer ─── */
+footer {
+  border-top: 4px double var(--ink);
+  text-align: center;
+  padding: 0.8rem 1rem;
+  font-family: 'IM Fell English SC', serif;
+  font-size: 0.72rem;
+  letter-spacing: 0.15em;
+  color: var(--ink-mid);
+  background: transparent;
+}
+
+/* ─── Responsive ─── */
+@media (max-width: 768px) {
+  .np-front,
+  .np-3col,
+  .np-2col,
+  .np-4col {
+    grid-template-columns: 1fr;
+  }
+  .np-col-divider { display: none; }
+  .np-col {
+    border-right: none !important;
+    border-bottom: 1px solid var(--ink);
+  }
+  .np-col:last-child { border-bottom: none; }
+  .masthead-top-rule .mast-corner { display: none; }
+  .masthead-title { font-size: 3.5rem; }
+  .nav-links a { padding: 0.25rem 0.55rem; font-size: 0.7rem; }
+}

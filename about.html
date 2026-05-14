@@ -4,9 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About — Jay Rao</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="newspaper.css" />
 </head>
 <body>
+
+  <header class="masthead">
+    <div class="masthead-top-rule">
+      <div class="mast-corner"><strong>Personal Profile</strong><br>Full Biography<br>Page One</div>
+      <div style="text-align:center;flex:1;font-family:'IM Fell English SC',serif;font-size:0.95rem;letter-spacing:0.2em;">Electrical Engineering · Arizona State University</div>
+      <div class="mast-corner" style="text-align:right;"><strong>Late City Edition</strong><br>Est. 2026</div>
+    </div>
+    <h1 class="masthead-title">Jay Rao</h1>
+    <p class="masthead-subtitle">Engineer · Builder · Problem Solver</p>
+    <div class="masthead-edition-bar">
+      <span>Vol. I &nbsp;·&nbsp; No. 1</span>
+      <span>Tempe, Arizona — Wednesday, April 23, 2026</span>
+      <span><a href="mailto:jayrao0107@gmail.com">jayrao0107@gmail.com</a> &nbsp;·&nbsp; <a href="https://github.com/jrao06" target="_blank" rel="noopener">github.com/jrao06</a></span>
+    </div>
+  </header>
 
   <nav>
     <div class="nav-inner">
@@ -23,91 +43,113 @@
 
   <main>
 
-    <h1 class="page-title">About Me</h1>
-
-    <!-- Bio -->
-    <div class="about-grid">
-      <div>
-        <div class="avatar-placeholder" style="width:180px;height:180px;">
-          <svg viewBox="0 0 100 100" fill="none" stroke="#333" stroke-width="4" stroke-linecap="round" stroke-linejoin="round">
-            <circle cx="50" cy="35" r="18"/>
-            <path d="M15 90 C15 68 85 68 85 90"/>
-          </svg>
-        </div>
-      </div>
-      <div class="about-text">
-        <p>Hi, I'm Jay — an electrical engineering student at Arizona State University with hands-on experience in embedded systems, rapid prototyping, and mechanical/electrical integration.</p>
-        <p>I'm skilled in SOLIDWORKS, Arduino development, MATLAB, Python, and C++, and I've shipped real-world projects involving sensor calibration, CAD modeling, microcontroller programming, and full-stack web development.</p>
-        <p>I'm currently seeking an engineering internship to apply these skills to real product development.</p>
-        <div class="btn-group">
-          <a href="contact.html" class="btn">Say Hello</a>
-          <a href="projects.html" class="btn">See My Work</a>
-        </div>
-      </div>
+    <div style="border-top:3px solid var(--ink); padding:0.9rem 1rem 0.6rem; text-align:center;">
+      <span class="section-kicker">Personal Profile</span>
+      <h2 class="headline-xl" style="font-size:clamp(1.6rem,3.6vw,2.6rem); border-bottom:2px solid var(--ink); padding-bottom:0.6rem; margin:0.3rem auto 0.5rem; text-align:center; max-width:900px;">
+        The Making of an Engineer: Curiosity, Community, and Code
+      </h2>
+      <div class="byline" style="margin-bottom:0.4rem;">By Jay Rao &nbsp;·&nbsp; Staff Correspondent, Tempe Bureau &nbsp;·&nbsp; April 23, 2026</div>
     </div>
 
-    <hr class="divider" />
+    <div class="np-front" style="border:1px solid var(--ink); border-top:none;">
 
-    <!-- Experience Timeline -->
-    <section style="margin-bottom:3rem;">
-      <h2 class="section-label">Experience &amp; Education</h2>
-      <ul class="timeline">
-        <li>
-          <div class="timeline-year">Jan 2026 – Present</div>
-          <div class="timeline-title">Prototyping Lead — EPICS Africa2Bridge Braille Display</div>
-          <div class="timeline-desc">Leading hardware prototyping for an AI-assisted braille display system, partnering with Austrian company Tetragon.co and Prinshof School in South Africa.</div>
-        </li>
-        <li>
-          <div class="timeline-year">Aug 2025 – May 2029</div>
-          <div class="timeline-title">B.S.E., Electrical Engineering — Arizona State University</div>
-          <div class="timeline-desc">GPA: 3.51. Focused on embedded systems, rapid prototyping, and electrical/mechanical integration.</div>
-        </li>
-        <li>
-          <div class="timeline-year">Apr 2024 – Jun 2025</div>
-          <div class="timeline-title">Mentor — Arduino Club</div>
-          <div class="timeline-desc">Taught foundational Arduino concepts and mentored 15 freshmen through building circuits and microcontroller projects.</div>
-        </li>
-        <li>
-          <div class="timeline-year">Sep 2023 – Jun 2025</div>
-          <div class="timeline-title">Lead Volunteer — Shiva Vishnu Temple, Livermore CA</div>
-          <div class="timeline-desc">Designed and launched a cultural/educational room serving 120+ students and families. Led a team creating digital learning modules in Python and Arduino.</div>
-        </li>
-        <li>
-          <div class="timeline-year">Jun 2025</div>
-          <div class="timeline-title">High School Diploma — California High School</div>
-          <div class="timeline-desc">GPA: 3.90.</div>
-        </li>
-      </ul>
-    </section>
-
-    <hr class="divider" />
-
-    <!-- Interests -->
-    <section>
-      <h2 class="section-label">Interests</h2>
-      <div class="card-grid">
-        <div class="card sketch-box">
-          <span class="card-icon">🔌</span>
-          <h3>Embedded Systems</h3>
-          <p>Microcontroller programming, sensor calibration, and hardware-software integration.</p>
+      <!-- Left: photo + quick facts -->
+      <div class="np-col">
+        <div class="photo-rotated-wrap" style="border:1px solid var(--ink); aspect-ratio: 4 / 5; overflow:hidden;">
+          <img src="images/jay_newspaper.png" alt="Jay Rao" style="width:100%; height:100%; object-fit:cover; object-position:center 32%;" />
         </div>
-        <div class="card sketch-box">
-          <span class="card-icon">🌐</span>
-          <h3>Web Development</h3>
-          <p>Full-stack apps with React, Node.js, WebSockets, and real-time systems.</p>
+        <div class="photo-caption" style="border:1px solid var(--ink); border-top:none;">Mr. Jay Rao, photographed in Tempe, Arizona, Spring 2026.</div>
+        <hr class="rule-thin">
+        <span class="section-kicker">Quick Facts</span>
+        <div class="body-text" style="font-size:0.85rem;">
+          <p><strong>Age:</strong> 19</p>
+          <p><strong>Hometown:</strong> San Ramon, CA</p>
+          <p><strong>University:</strong> Arizona State University</p>
+          <p><strong>Major:</strong> B.S.E., Electrical Engineering</p>
+          <p><strong>Current GPA:</strong> 3.51</p>
+          <p><strong>Grad. Year:</strong> 2029</p>
+          <p><strong>Seeking:</strong> Engineering Internship, Summer 2026</p>
         </div>
-        <div class="card sketch-box">
-          <span class="card-icon">🛠️</span>
-          <h3>Prototyping</h3>
-          <p>CAD modeling with SOLIDWORKS, iterative hardware builds, and rapid testing.</p>
+        <hr class="rule-thin">
+        <div class="btn-group" style="flex-direction:column;">
+          <a href="contact.html" class="np-btn" style="text-align:center;">Say Hello</a>
+          <a href="projects.html" class="np-btn np-btn-outline" style="text-align:center;">See My Work</a>
         </div>
       </div>
-    </section>
+
+      <div class="np-col-divider"></div>
+
+      <!-- Center: long bio -->
+      <div class="np-col">
+        <span class="section-kicker">Biography</span>
+        <div class="body-text drop-cap">
+          <p>HI, I'M JAY — an electrical engineering student at Arizona State University with hands-on experience in embedded systems, rapid prototyping, and mechanical/electrical integration. I grew up in Livermore, California, where a kitchen-table fascination with circuits and code steadily became something more deliberate.</p>
+          <p>I am skilled in SOLIDWORKS, Arduino development, MATLAB, Python, and C++, and I have shipped real-world projects involving sensor calibration, CAD modeling, microcontroller programming, and full-stack web development.</p>
+          <p>I am currently seeking an engineering internship to apply these skills to real product development, with a preference for roles that sit at the intersection of hardware and software.</p>
+          <p>What drives me is simple: I want to build things that actually matter. Whether that means a braille display that helps a student in South Africa read the web, or a market simulation engine that makes a hackathon audience gasp — the goal is always the same: make it work, make it well.</p>
+        </div>
+
+        <hr class="rule-double">
+
+        <span class="section-kicker">Interests</span>
+        <div class="np-3col" style="border:1px solid var(--ink);">
+          <div class="np-col" style="padding:0.7rem 0.9rem;">
+            <h4 class="headline-sm" style="white-space:nowrap;">Embedded Systems</h4>
+            <p class="body-text" style="font-size:0.82rem; text-align:left; hyphens:none;">Microcontroller programming, sensor calibration, and hardware-software integration.</p>
+          </div>
+          <div class="np-col" style="padding:0.7rem 0.9rem;">
+            <h4 class="headline-sm" style="white-space:nowrap;">Web Development</h4>
+            <p class="body-text" style="font-size:0.82rem; text-align:left; hyphens:none;">Full-stack apps with React, Node.js, and WebSockets for real-time systems.</p>
+          </div>
+          <div class="np-col" style="padding:0.7rem 0.9rem;">
+            <h4 class="headline-sm" style="white-space:nowrap;">Prototyping</h4>
+            <p class="body-text" style="font-size:0.82rem; text-align:left; hyphens:none;">CAD modeling in SOLIDWORKS, iterative hardware builds, and rapid testing.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="np-col-divider"></div>
+
+      <!-- Right: timeline -->
+      <div class="np-col">
+        <span class="section-kicker">Experience &amp; Education</span>
+        <h3 class="headline-md" style="margin-bottom:0.8rem;">A Record of Service</h3>
+
+        <ul class="np-timeline">
+          <li>
+            <div class="tl-year">Jan 2026 – Present</div>
+            <div class="tl-title">Prototyping Lead — EPICS Africa2Bridge Braille Display</div>
+            <div class="tl-desc">Leading hardware prototyping for an AI-assisted braille display system, partnering with Austrian company Tetragon.co and Prinshof School in South Africa.</div>
+          </li>
+          <li>
+            <div class="tl-year">Aug 2025 – May 2029</div>
+            <div class="tl-title">B.S.E., Electrical Engineering — Arizona State University</div>
+            <div class="tl-desc">GPA: 3.51. Focused on embedded systems, rapid prototyping, and electrical/mechanical integration.</div>
+          </li>
+          <li>
+            <div class="tl-year">Apr 2024 – Jun 2025</div>
+            <div class="tl-title">Mentor — Arduino Club</div>
+            <div class="tl-desc">Taught foundational Arduino concepts and mentored 15 freshmen through building circuits and microcontroller projects.</div>
+          </li>
+          <li>
+            <div class="tl-year">Sep 2023 – Jun 2025</div>
+            <div class="tl-title">Lead Volunteer — Shiva Vishnu Temple, Livermore CA</div>
+            <div class="tl-desc">Designed and launched a cultural/educational room serving 120+ students and families. Led a team creating digital learning modules in Python and Arduino.</div>
+          </li>
+          <li>
+            <div class="tl-year">Jun 2025</div>
+            <div class="tl-title">High School Diploma — California High School</div>
+            <div class="tl-desc">GPA: 3.90. Graduated with honors.</div>
+          </li>
+        </ul>
+      </div>
+
+    </div>
 
   </main>
 
   <footer>
-    <p>Drawn with care &mdash; Jay Rao &copy; 2026</p>
+    <p>Jay Rao &nbsp;·&nbsp; Electrical Engineering, Arizona State University &nbsp;·&nbsp; Tempe, Arizona &nbsp;·&nbsp; © 2026</p>
   </footer>
 
 </body>

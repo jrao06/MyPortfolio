@@ -4,9 +4,29 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Projects — Jay Rao</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Pirata+One&display=swap" rel="stylesheet">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+  <link rel="stylesheet" href="newspaper.css" />
 </head>
 <body>
+
+  <header class="masthead">
+    <div class="masthead-top-rule">
+      <div class="mast-corner"><strong>Portfolio &amp; Works</strong><br>Full Project Archive<br>Page One</div>
+      <div style="text-align:center;flex:1;font-family:'IM Fell English SC',serif;font-size:0.95rem;letter-spacing:0.2em;">Electrical Engineering · Arizona State University</div>
+      <div class="mast-corner" style="text-align:right;"><strong>Late City Edition</strong><br>Est. 2026</div>
+    </div>
+    <h1 class="masthead-title">Jay Rao</h1>
+    <p class="masthead-subtitle">Engineer · Builder · Problem Solver</p>
+    <div class="masthead-edition-bar">
+      <span>Vol. I &nbsp;·&nbsp; No. 1</span>
+      <span>Tempe, Arizona — Wednesday, April 23, 2026</span>
+      <span><a href="mailto:jayrao0107@gmail.com">jayrao0107@gmail.com</a> &nbsp;·&nbsp; <a href="https://github.com/jrao06" target="_blank" rel="noopener">github.com/jrao06</a></span>
+    </div>
+  </header>
 
   <nav>
     <div class="nav-inner">
@@ -23,101 +43,142 @@
 
   <main>
 
-    <h1 class="page-title">Projects</h1>
-    <p style="margin-bottom:2rem;">Things I've built, shipped, and learned from.</p>
+    <div style="border-top:3px solid var(--ink); padding:0.9rem 1rem 0.6rem; text-align:center;">
+      <span class="section-kicker">Portfolio</span>
+      <h2 class="headline-xl" style="font-size:clamp(1.6rem,3.6vw,2.6rem); border-bottom:2px solid var(--ink); padding-bottom:0.6rem; margin:0.3rem auto 0.5rem; text-align:center; max-width:900px;">
+        Things Built, Shipped, and Learned From
+      </h2>
+      <div class="byline" style="margin-bottom:0.4rem;">Reported by Jay Rao &nbsp;·&nbsp; Engineering Correspondent &nbsp;·&nbsp; April 23, 2026</div>
+    </div>
 
-    <!-- Featured -->
-    <section style="margin-bottom:3rem;">
-      <h2 class="section-label">Featured</h2>
-      <div class="card-grid">
+    <!-- Featured projects: big 3-col front page style -->
+    <div style="border:1px solid var(--ink); border-top:none; margin-bottom:1rem;">
 
-        <div class="card sketch-box">
-          <span class="card-icon">📈</span>
-          <h3>Dollar Dash</h3>
-          <p>Real-time multiplayer stock trading game built for InnovationHACKS 2.0 at ASU. Supports simultaneous players via WebSockets, with a live market engine updating prices 4× per second driven by volatility, drift, and event-based news.</p>
-          <div class="card-tags">
-            <span class="tag">React 19</span>
-            <span class="tag">Node.js</span>
-            <span class="tag">Socket.io</span>
-            <span class="tag">Tailwind CSS</span>
+      <div style="background:var(--paper-dark); padding:0.3rem 1rem; border-bottom:1px solid var(--ink);">
+        <span class="section-kicker" style="margin:0;">Featured Works</span>
+      </div>
+
+      <div class="np-3col">
+
+        <!-- Dollar Dash -->
+        <div class="np-col">
+          <span class="section-kicker">Web Application</span>
+          <h3 class="headline-lg">Dollar Dash Thrills Hackers With Live Market Engine</h3>
+          <div class="byline">InnovationHACKS 2.0 · Arizona State University</div>
+          <div class="body-text drop-cap" style="font-size:0.9rem;">
+            <p>DOLLAR DASH is a real-time multiplayer stock trading game conceived and built for InnovationHACKS 2.0 at ASU. The system supports simultaneous players via WebSockets, with a live market engine updating prices four times per second, driven by volatility parameters, drift coefficients, and event-based news injections.</p>
+            <p>The project showcases Mr. Rao's mastery of the full stack: a React 19 front-end, a Node.js server, and Socket.io transport layer capable of handling the rapid-fire price propagation demanded by live gameplay.</p>
           </div>
-          <div class="btn-group" style="margin-top:0.5rem;">
-            <a href="https://github.com/jrao06" class="btn" target="_blank" rel="noopener">Code</a>
+          <hr class="rule-thin">
+          <div class="tag-row">
+            <span class="np-tag">React 19</span>
+            <span class="np-tag">Node.js</span>
+            <span class="np-tag">Socket.io</span>
+            <span class="np-tag">Tailwind CSS</span>
+            <span class="np-tag">WebSockets</span>
+          </div>
+          <a href="https://github.com/jrao06" class="np-btn" target="_blank" rel="noopener" style="margin-top:0.5rem; display:inline-block;">View Code →</a>
+        </div>
+
+        <!-- SpaceHACK -->
+        <div class="np-col">
+          <span class="section-kicker">Geospatial Analysis</span>
+          <h3 class="headline-lg">SpaceHACK Entry Conquers 150 Teams, Claims Two Prizes</h3>
+          <div class="byline">SpaceHACK 2026 · 1st ASU · 2nd International</div>
+          <div class="body-text drop-cap" style="font-size:0.9rem;">
+            <p>COMPETING AGAINST more than 150 teams worldwide at SpaceHACK 2026, Mr. Rao's entry placed first at ASU and second internationally. The project harnessed Google Earth Engine, Sentinel-5P carbon monoxide datasets, SRTM elevation data, and live vessel-tracking feeds.</p>
+            <p>The objective — identifying the most efficient overland freight corridors to reduce emissions — demanded both sophisticated geospatial reasoning and fluency with satellite APIs rarely encountered by first-year undergraduates.</p>
+          </div>
+          <hr class="rule-thin">
+          <div class="tag-row">
+            <span class="np-tag">Google Earth Engine</span>
+            <span class="np-tag">Sentinel-5P</span>
+            <span class="np-tag">SRTM</span>
+            <span class="np-tag">GIS</span>
+            <span class="np-tag">Python</span>
           </div>
         </div>
 
-        <div class="card sketch-box">
-          <span class="card-icon">🛰️</span>
-          <h3>SpaceHACK for Sustainability</h3>
-          <p>Placed 1st at ASU and 2nd internationally at SpaceHACK 2026, competing against 150+ teams. Used Google Earth Engine, Sentinel-5P CO datasets, SRTM elevation data, and live vessel tracking to identify the most efficient overland corridors.</p>
-          <div class="card-tags">
-            <span class="tag">Google Earth Engine</span>
-            <span class="tag">Sentinel-5P</span>
-            <span class="tag">GIS</span>
+        <!-- Braille -->
+        <div class="np-col">
+          <span class="section-kicker">Accessibility Hardware</span>
+          <h3 class="headline-lg">Braille Display Links Three Continents in Accessibility Push</h3>
+          <div class="byline">EPICS Program · Arizona State University · Jan 2026 – Present</div>
+          <div class="body-text drop-cap" style="font-size:0.9rem;">
+            <p>AS PROTOTYPING LEAD on the Africa2Bridge Braille Display project, Mr. Rao is working to improve web accessibility for blind and partially sighted users worldwide. The device combines AI-driven software with affordable braille display hardware.</p>
+            <p>The effort brings together Tetragon.co of Austria, Prinshof School in South Africa, and the EPICS program at ASU — a partnership spanning three continents and united by the conviction that assistive technology should not be a luxury.</p>
           </div>
-        </div>
-
-        <div class="card sketch-box">
-          <span class="card-icon">⠿</span>
-          <h3>Africa2Bridge Braille Display</h3>
-          <p>EPICS project improving web accessibility for blind and partially sighted users. Combining AI software with affordable braille display hardware, partnering with Tetragon.co (Austria) and Prinshof School (South Africa).</p>
-          <div class="card-tags">
-            <span class="tag">Hardware</span>
-            <span class="tag">AI</span>
-            <span class="tag">Accessibility</span>
-            <span class="tag">Prototyping</span>
+          <hr class="rule-thin">
+          <div class="tag-row">
+            <span class="np-tag">Hardware</span>
+            <span class="np-tag">AI</span>
+            <span class="np-tag">Accessibility</span>
+            <span class="np-tag">Prototyping</span>
+            <span class="np-tag">EPICS</span>
           </div>
         </div>
 
       </div>
-    </section>
+    </div>
 
-    <hr class="divider" />
+    <hr class="rule-double">
 
-    <!-- Other / Experiments -->
-    <section>
-      <h2 class="section-label">Other &amp; Volunteering</h2>
-      <div class="card-grid">
+    <!-- Other projects -->
+    <div style="margin-bottom:0.4rem;">
+      <span class="section-kicker">Other &amp; Volunteering</span>
+      <h3 class="headline-lg" style="border-bottom:1px solid var(--ink); padding-bottom:0.4rem;">Further Dispatches From the Field</h3>
+    </div>
 
-        <div class="card sketch-box">
-          <span class="card-icon">🎓</span>
-          <h3>Arduino Club Mentorship</h3>
-          <p>Mentored 15 freshmen through foundational Arduino concepts — loops, I/O, sensor reading — guiding them to build their first circuits and microcontroller projects.</p>
-          <div class="card-tags">
-            <span class="tag">Arduino</span>
-            <span class="tag">C++</span>
-            <span class="tag">Electronics</span>
-          </div>
+    <div class="np-3col" style="border:1px solid var(--ink);">
+
+      <div class="np-col">
+        <span class="section-kicker">Education</span>
+        <h4 class="headline-md">Arduino Club Mentorship Shapes Next Generation</h4>
+        <div class="byline">Apr 2024 – Jun 2025</div>
+        <div class="body-text" style="font-size:0.88rem;">
+          <p>Mentored 15 freshmen through foundational Arduino concepts — loops, I/O, sensor reading — guiding them to build their first circuits and microcontroller projects from scratch.</p>
         </div>
-
-        <div class="card sketch-box">
-          <span class="card-icon">🏛️</span>
-          <h3>Temple Education Room</h3>
-          <p>Designed and launched a cultural/educational room serving 120+ students and families at Shiva Vishnu Temple, Livermore. Led a team to create Python and Arduino learning modules.</p>
-          <div class="card-tags">
-            <span class="tag">Python</span>
-            <span class="tag">Arduino</span>
-            <span class="tag">Education</span>
-          </div>
+        <div class="tag-row">
+          <span class="np-tag">Arduino</span>
+          <span class="np-tag">C++</span>
+          <span class="np-tag">Electronics</span>
         </div>
-
-        <div class="card sketch-box">
-          <span class="card-icon">📝</span>
-          <h3>This Website</h3>
-          <p>A hand-drawn themed personal site built from scratch with plain HTML &amp; CSS.</p>
-          <div class="card-tags">
-            <span class="tag">HTML</span>
-            <span class="tag">CSS</span>
-          </div>
-        </div>
-
       </div>
-    </section>
+
+      <div class="np-col">
+        <span class="section-kicker">Community</span>
+        <h4 class="headline-md">Temple Education Room Serves 120+ Students</h4>
+        <div class="byline">Sep 2023 – Jun 2025 · Livermore, CA</div>
+        <div class="body-text" style="font-size:0.88rem;">
+          <p>Designed and launched a cultural and educational room at Shiva Vishnu Temple, Livermore. Led a team to create Python and Arduino learning modules for students and families.</p>
+        </div>
+        <div class="tag-row">
+          <span class="np-tag">Python</span>
+          <span class="np-tag">Arduino</span>
+          <span class="np-tag">Education</span>
+        </div>
+      </div>
+
+      <div class="np-col">
+        <span class="section-kicker">Web</span>
+        <h4 class="headline-md">This Very Newspaper: Built From Scratch in Plain HTML</h4>
+        <div class="byline">April 2026 · Personal Project</div>
+        <div class="body-text" style="font-size:0.88rem;">
+          <p>A newspaper-themed personal website designed and built without frameworks — pure HTML and CSS, inspired by the Golden Age broadsheet.</p>
+        </div>
+        <div class="tag-row">
+          <span class="np-tag">HTML</span>
+          <span class="np-tag">CSS</span>
+          <span class="np-tag">Design</span>
+        </div>
+      </div>
+
+    </div>
 
   </main>
 
   <footer>
-    <p>Drawn with care &mdash; Jay Rao &copy; 2026</p>
+    <p>Jay Rao &nbsp;·&nbsp; Electrical Engineering, Arizona State University &nbsp;·&nbsp; Tempe, Arizona &nbsp;·&nbsp; © 2026</p>
   </footer>
 
 </body>
